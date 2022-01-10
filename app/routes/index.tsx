@@ -1,4 +1,6 @@
 import Header from '../components/layout/Header'
+import HeroSection from '../components/pages/landing/HeroSection'
+import Recently from '../components/pages/landing/Recently'
 
 export default function Index() {
 	return (
@@ -6,35 +8,11 @@ export default function Index() {
 			style={{
 				fontFamily: 'system-ui, sans-serif',
 				lineHeight: '1.4',
-				width: '100vw',
 			}}
 		>
 			<Header />
-			<ul>
-				<li>
-					<a
-						target="_blank"
-						href="https://remix.run/tutorials/blog"
-						rel="noreferrer"
-					>
-						15m Quickstart Blog Tutorial
-					</a>
-				</li>
-				<li>
-					<a
-						target="_blank"
-						href="https://remix.run/tutorials/jokes"
-						rel="noreferrer"
-					>
-						Deep Dive Jokes App Tutorial
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-						Remix Docs
-					</a>
-				</li>
-			</ul>
+			<HeroSection />
+			<Recently />
 		</div>
 	)
 }
