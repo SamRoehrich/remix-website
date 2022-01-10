@@ -1,4 +1,6 @@
+import Footer from '../components/layout/Footer'
 import Header from '../components/layout/Header'
+import AboutMe from '../components/pages/landing/AboutMe'
 import HeroSection from '../components/pages/landing/HeroSection'
 import Recently from '../components/pages/landing/Recently'
 
@@ -13,6 +15,8 @@ export default function Index() {
 			<Header />
 			<HeroSection />
 			<Recently />
+			<AboutMe />
+			<Footer />
 		</div>
 	)
 }

@@ -508,6 +508,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: calc(100vh - 20rem);
 }
 
+.h-\[calc\(100\%\+10rem\)\] {
+  height: calc(100% + 10rem);
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -548,6 +560,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 40%;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -562,6 +578,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -588,6 +608,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .p-8 {
   padding: 2rem;
 }
@@ -602,6 +628,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-24 {
+  padding: 6rem;
 }
 
 .py-8 {
@@ -659,6 +689,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 3rem;
 }
 
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.px-36 {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
 .pr-20 {
   padding-right: 5rem;
 }
@@ -703,10 +743,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
